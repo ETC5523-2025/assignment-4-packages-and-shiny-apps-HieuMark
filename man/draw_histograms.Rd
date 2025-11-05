@@ -4,10 +4,12 @@
 \alias{draw_histograms}
 \title{Draw 4 histogram of a numeric column from a data frame by 4 different scenarios}
 \usage{
-draw_histograms(col)
+draw_histograms(col, bins = 30)
 }
 \arguments{
 \item{col}{either "travelers" or "workers"; will draw histograms for either travelers breach or workers breach}
+
+\item{bins}{Number of bins for the histogram (default value is 30)}
 }
 \value{
 a ggplot2 object with geom histogram

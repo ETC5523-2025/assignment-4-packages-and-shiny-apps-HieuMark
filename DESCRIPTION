@@ -13,8 +13,8 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Imports: 
+    DT,
     ggplot2,
-    glue,
     shiny
 Depends: 
     R (>= 3.5)
