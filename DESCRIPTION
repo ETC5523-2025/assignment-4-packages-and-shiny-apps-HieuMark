@@ -1,9 +1,9 @@
 Package: eventBreachesCovid19
-Title: What the Package Does (One Line, Title Case)
+Title: Simulate COVID-19 breach events with Poisson distribution
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Hieu", "Nguyen", , "hieugmt@gmail.com", role = c("aut", "cre"))
+Description: Helps simulate breach events scenarios from "COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2" with Poisson distribution and visualize them using histograms and density plots.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
