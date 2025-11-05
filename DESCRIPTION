@@ -12,9 +12,11 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-Imports: 
+Imports:
     DT,
     ggplot2,
+    plotly,
+    readr,
     shiny
 Depends: 
     R (>= 3.5)

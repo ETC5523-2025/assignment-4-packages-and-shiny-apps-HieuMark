@@ -36,6 +36,6 @@ draw_density_plots = function(col) {
 
   p +
     geom_density(fill = "skyblue", alpha = 0.5, color = "steelblue") +
-    facet_wrap(~ panel, scale = "free") +
+    facet_wrap(~ panel, scales = "free") +
     theme_bw()
 }

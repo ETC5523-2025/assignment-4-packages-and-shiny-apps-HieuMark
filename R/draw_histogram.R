@@ -37,6 +37,6 @@ draw_histograms = function(col, bins = 30) {
 
   p +
     geom_histogram(bins = bins, fill = "steelblue", color = "skyblue") +
-    facet_wrap(~ panel, scale = "free") +
+    facet_wrap(~ panel, scales = "free") +
     theme_bw()
 }
