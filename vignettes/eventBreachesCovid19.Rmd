@@ -1,0 +1,28 @@
+---
+title: "eventBreachesCovid19"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{eventBreachesCovid19}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(eventBreachesCovid19)
+
+dim(breach_events)
+
+breach_events
+
+draw_histograms("travelers")
+draw_histograms("workers")
+draw_density_plots("travelers")
+draw_density_plots("workers")
+```
