@@ -1,10 +1,3 @@
-ggplot = ggplot2:::ggplot
-aes = ggplot2:::aes
-geom_density = ggplot2:::geom_density
-facet_wrap = ggplot2:::facet_wrap
-labs = ggplot2:::labs
-theme_bw = ggplot2:::theme_bw
-
 #' Draw 4 density plots of a numeric column from a data frame by 4 different scenarios
 #'
 #' @param col either "travelers" or "workers"; will draw density plots for either travelers breach or workers breach
@@ -14,9 +7,10 @@ theme_bw = ggplot2:::theme_bw
 #' draw_density_plots("travelers")
 #'
 #' @export
+#' @importFrom ggplot2 ggplot aes geom_density theme_bw labs facet_wrap
 
 draw_density_plots = function(col) {
-  data("breach_events", package = "eventBreachesCovid19", envir = environment())
+  utils::data("breach_events", package = "eventBreachesCovid19", envir = environment())
 
   if (col == "travelers") {
     p = ggplot(breach_events, aes(traveler_counts_pois)) +

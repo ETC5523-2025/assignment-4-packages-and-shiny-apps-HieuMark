@@ -48,7 +48,15 @@ ui <- fluidPage(
               tabPanel("Panel C", DTOutput("table_C"), downloadButton("download_csv_C", "Download CSV")),
               tabPanel("Panel D", DTOutput("table_D"), downloadButton("download_csv_D", "Download CSV"))
             ))
-          )
+          ),
+          p(""),
+          p("The histograms and density plots shows the distributions of breach event counts for each scenario (panel).", br(),
+            "The tables contain data where the plots are generated from.", br(),
+            "Traveler counts and worker counts are simulated using Poisson distributions."),
+          p("Panel A - Ancestral strain without vaccination"),
+          p("Panel B - Ancestral strain with vaccination"),
+          p("Panel C - Delta strain without vaccination"),
+          p("Panel D - Delta strain with vaccination")
         )
     )
 )

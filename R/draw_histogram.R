@@ -1,10 +1,3 @@
-ggplot = ggplot2:::ggplot
-aes = ggplot2:::aes
-geom_histogram = ggplot2:::geom_histogram
-facet_wrap = ggplot2:::facet_wrap
-labs = ggplot2:::labs
-theme_bw = ggplot2:::theme_bw
-
 #' Draw 4 histogram of a numeric column from a data frame by 4 different scenarios
 #'
 #' @param col either "travelers" or "workers"; will draw histograms for either travelers breach or workers breach
@@ -15,9 +8,10 @@ theme_bw = ggplot2:::theme_bw
 #' draw_histograms("travelers")
 #'
 #' @export
+#' @importFrom ggplot2 ggplot aes geom_histogram theme_bw labs facet_wrap
 
 draw_histograms = function(col, bins = 30) {
-  data("breach_events", package = "eventBreachesCovid19", envir = environment())
+  utils::data("breach_events", package = "eventBreachesCovid19", envir = environment())
 
   if (col == "travelers") {
     p = ggplot(breach_events, aes(traveler_counts_pois)) +
